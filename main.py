@@ -8,7 +8,7 @@ app=FastAPI(
     description="Water Potability Prediction"
 )
 
-with open("D:/projects/CVC DVD pipeline/model.pkl","rb") as f:
+with open("model.pkl","rb") as f:
     model=pickle.load(f)
 
 @app.get("/")
